@@ -3,7 +3,7 @@ type PlanetNameProp = {
   planetImage: string,
 };
 
-function SolarSystem({ planetName, planetImage }: PlanetNameProp) {
+function PlanetCard({ planetName, planetImage }: PlanetNameProp) {
   return (
     <div data-testid="planet-card">
       <p data-testid="planet-name">{planetName}</p>
@@ -12,4 +12,4 @@ function SolarSystem({ planetName, planetImage }: PlanetNameProp) {
   );
 }
 
-export default SolarSystem;
+export default PlanetCard;
