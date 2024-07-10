@@ -6,13 +6,15 @@ function SolarSystem() {
   return (
     <div data-testid="solar-system">
       <Title headline="Planetas" />
-      {Planets.map((planet, index) => (
-        <PlanetCard
-          key={ index }
-          planetName={ planet.name }
-          planetImage={ planet.image }
-        />
-      ))}
+      <div className="planets">
+        {Planets.map((planet, index) => (
+          <PlanetCard
+            key={ index }
+            planetName={ planet.name }
+            planetImage={ planet.image }
+          />
+        ))}
+      </div>
     </div>
   );
 }

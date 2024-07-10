@@ -4,17 +4,19 @@ import MissionCard from './MissionCard';
 
 function Missions() {
   return (
-    <div data-testid="missions">
+    <div className="missions" data-testid="missions">
       <Title headline="Missões" />
-      {missions.map((mission, index) => (
-        <MissionCard
-          key={ index }
-          name={ mission.name }
-          year={ mission.year }
-          country={ mission.country }
-          destination={ mission.destination }
-        />
-      ))}
+      <div className="missions-list">
+        {missions.map((mission, index) => (
+          <MissionCard
+            key={ index }
+            name={ mission.name }
+            year={ mission.year }
+            country={ mission.country }
+            destination={ mission.destination }
+          />
+        ))}
+      </div>
     </div>
   );
 }

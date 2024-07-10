@@ -4,7 +4,7 @@ type HeadlineType = {
 
 function Title({ headline }: HeadlineType) {
   return (
-    <h2>
+    <h2 className="title">
       {' '}
       {headline}
       {' '}
